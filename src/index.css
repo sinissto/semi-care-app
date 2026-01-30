@@ -1,1 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-primary: Nunito, sans-serif;
+  --font-secondary: Pacifico, sans-serif;
+
+  --text-grey-primary: #555;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--text-grey-primary);
+}
