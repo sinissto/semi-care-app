@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={"bg-primary-tint h-24 flex items-center justify-center"}>
       <div
-        className={"max-w-7xl flex-1 flex items-center justify-between px-12"}
+        className={"max-w-8xl flex-1 flex items-center justify-between px-12"}
       >
         {/* logo */}
         <NavLink to={"/"}>

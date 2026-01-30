@@ -12,6 +12,8 @@
 
   --color-grey-primary: #555;
   --color-grey-secondary: #333;
+
+  --spacing-8xl: 1440px;
 }
 
 body {
