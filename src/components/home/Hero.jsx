@@ -1,14 +1,10 @@
+import Section from "../../layout/Section";
 import heroImg from "../../assets/images/hero.jpg";
 
 const Hero = () => {
   return (
-    <section className={"bg-primary-tint py-24"}>
-      {/* .hero */}
-      <div
-        className={
-          " max-w-7xl grid grid-cols-2 items-center gap-24 mx-auto px-8"
-        }
-      >
+    <Section>
+      <div className={"grid grid-cols-2 items-center gap-24"}>
         {/* hero text box */}
         <div className={""}>
           {/* hero heading primary */}
@@ -54,7 +50,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
