@@ -2,7 +2,7 @@ import heroImg from "../../assets/images/hero.jpg";
 
 const Hero = () => {
   return (
-    <section className={"bg-[#fad9e5] py-24"}>
+    <section className={"bg-primary-tint py-24"}>
       {/* .hero */}
       <div
         className={
@@ -14,13 +14,13 @@ const Hero = () => {
           {/* hero heading primary */}
           <h1
             className={
-              "text-5xl/[1.05] font-primary font-bold -tracking-[0.5px] mb-8"
+              "text-5xl/[1.05] text-grey-primary font-primary font-bold -tracking-[0.5px] mb-8"
             }
           >
             Home care - because home is where the heart is
           </h1>
           {/* hero description */}
-          <p className={"text-xl/normal mb-12"}>
+          <p className={"text-xl/normal text-grey-primary mb-12"}>
             Quality-assured home care and medical services in accordance with
             recognized healthcare standards. Focuses on safety, reliability, and
             preserving independence, while supporting families through clear
@@ -30,7 +30,7 @@ const Hero = () => {
           <a
             href="#"
             className={
-              "text-xl bg-[#E8407B] text-white inline-block py-4 px-8 rounded-lg mr-8 hover:bg-[#d13a6f] active:scale-[0.98] transition-colors duration-300"
+              "text-xl bg-primary text-white inline-block py-4 px-8 rounded-lg mr-8 hover:bg-primary-shade active:scale-[0.98] transition-colors duration-300"
             }
           >
             Contact us
@@ -38,10 +38,10 @@ const Hero = () => {
           <a
             href="#"
             className={
-              "text-xl bg-white text-[#555] inline-block py-4 px-8 rounded-lg hover:bg-[#fad9e5] hover:inset-ring-3 hover:inset-ring-white active:scale-[0.98] transition-colors duration-300"
+              "text-xl bg-white text-grey-primary inline-block py-4 px-8 rounded-lg hover:bg-primary-tint hover:inset-ring-3 hover:inset-ring-white active:scale-[0.98] transition-colors duration-300"
             }
           >
-            About us &rarr;
+            About us &darr;
           </a>
         </div>
 

@@ -6,7 +6,12 @@
   --font-primary: Nunito, sans-serif;
   --font-secondary: Pacifico, sans-serif;
 
-  --text-grey-primary: #555;
+  --color-primary: #e8407b;
+  --color-primary-tint: #fad9e5;
+  --color-primary-shade: #d13a6f;
+
+  --color-grey-primary: #555;
+  --color-grey-secondary: #333;
 }
 
 body {
