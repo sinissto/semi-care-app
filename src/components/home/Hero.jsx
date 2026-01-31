@@ -26,7 +26,7 @@ const Hero = () => {
           <a
             href="#"
             className={
-              "text-xl bg-primary text-white inline-block py-4 px-8 rounded-lg mr-8 hover:bg-primary-shade active:scale-[0.98] transition-colors duration-300"
+              "text-xl bg-primary1 text-white inline-block py-4 px-8 rounded-lg mr-8 hover:bg-primary-shade active:scale-[0.98] transition-colors duration-300"
             }
           >
             Contact us
