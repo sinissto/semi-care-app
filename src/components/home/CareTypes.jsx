@@ -37,14 +37,17 @@ const CareTypes = () => {
         <Link to={"/services"}>View all Services &rarr;</Link> 
         */}
 
-        <Tabs defaultValue="account" className="">
-          <TabsList className={"bg-white"}>
-            <TabsTrigger value="account">Home Care</TabsTrigger>
-            <TabsTrigger value="password">Nursing Care</TabsTrigger>
+        <Tabs defaultValue="account" className=" w-[95%]">
+          <TabsList className={"bg-white "}>
+            <TabsTrigger value="home-care">Home Care</TabsTrigger>
+            <TabsTrigger value="nursing-care">Nursing Care</TabsTrigger>
           </TabsList>
-          <TabsContent value="account">
+          <TabsContent
+            value="home-care"
+            className={"w-full flex flex-col items-center"}
+          >
             <h2 className={"text-3xl font-bold mb-10"}>What is Home Care?</h2>
-            <p className="mb-8">
+            <p className="w-[750px] text-center mb-8">
               Home care focuses on non-medical support to help you and your
               loved ones with daily living. Our carefully screened and highly
               qualified caregivers provide comprehensive home care and help you
@@ -52,7 +55,7 @@ const CareTypes = () => {
               Philopsphy
             </p>
 
-            <div className={"flex justify-around items-center mb-8"}>
+            <div className={"w-full flex justify-around items-center mb-8"}>
               <div
                 className={
                   "bg-white w-[300px] h-[400px] flex flex-col gap-8 items-center justify-center"
@@ -94,18 +97,23 @@ const CareTypes = () => {
               </div>
             </div>
           </TabsContent>
-          <TabsContent value="password">
+
+          {/* ******************************************************************************* */}
+          <TabsContent
+            value="nursing-care"
+            className={"w-full flex flex-col items-center"}
+          >
             <h2 className={"text-3xl font-bold mb-10"}>
               What is Nursing Care?
             </h2>
-            <p className="mb-8">
+            <p className="w-[750px] text-center mb-8">
               Through our health care services, we bring skilled, trained,
               certified nurses right to your home. Our experienced nurses
               provide support in medication management, post-surgery and and
               more.
             </p>
 
-            <div className={"flex justify-around items-center mb-8"}>
+            <div className={"w-full flex justify-around items-center mb-8"}>
               <div
                 className={
                   "bg-white w-[300px] h-[400px] flex flex-col gap-8 items-center justify-center"
