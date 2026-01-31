@@ -60,6 +60,7 @@ const CareTypes = () => {
               >
                 <p>IMAGE</p>
                 <p>Heading h3</p>
+                <p>DESCRIPTION</p>
 
                 <button className="bg-primary1 px-6 py-3 rounded-[5px]">
                   Read More
@@ -72,6 +73,7 @@ const CareTypes = () => {
               >
                 <p>IMAGE</p>
                 <p>Heading h3</p>
+                <p>DESCRIPTION</p>
 
                 <button className="bg-primary1 px-6 py-3 rounded-[5px]">
                   Read More
@@ -84,6 +86,7 @@ const CareTypes = () => {
               >
                 <p>IMAGE</p>
                 <p>Heading h3</p>
+                <p>DESCRIPTION</p>
 
                 <button className="bg-primary1 px-6 py-3 rounded-[5px]">
                   Read More
@@ -92,13 +95,14 @@ const CareTypes = () => {
             </div>
           </TabsContent>
           <TabsContent value="password">
-            <h2>What is Nursing Care?</h2>
-            <p>
-              Home care focuses on non-medical support to help you and your
-              loved ones with daily living. Our carefully screened and highly
-              qualified caregivers provide comprehensive home care and help you
-              rediscover activities you love through our Happier Aging
-              Philopsphy
+            <h2 className={"text-3xl font-bold mb-10"}>
+              What is Nursing Care?
+            </h2>
+            <p className="mb-8">
+              Through our health care services, we bring skilled, trained,
+              certified nurses right to your home. Our experienced nurses
+              provide support in medication management, post-surgery and and
+              more.
             </p>
 
             <div className={"flex justify-around items-center mb-8"}>
@@ -109,6 +113,7 @@ const CareTypes = () => {
               >
                 <p>IMAGE</p>
                 <p>Heading h3</p>
+                <p>DESCRIPTION</p>
 
                 <button className="bg-primary1 px-6 py-3 rounded-[5px]">
                   Read More
@@ -121,6 +126,7 @@ const CareTypes = () => {
               >
                 <p>IMAGE</p>
                 <p>Heading h3</p>
+                <p>DESCRIPTION</p>
 
                 <button className="bg-primary1 px-6 py-3 rounded-[5px]">
                   Read More
@@ -133,6 +139,7 @@ const CareTypes = () => {
               >
                 <p>IMAGE</p>
                 <p>Heading h3</p>
+                <p>DESCRIPTION</p>
 
                 <button className="bg-primary1 px-6 py-3 rounded-[5px]">
                   Read More
