@@ -10,34 +10,7 @@ const CareTypes = () => {
           "bg-[#F5EEE8] py-10 rounded-2xl flex flex-col items-center justify-center"
         }
       >
-        {/* 
-        <div>
-          <a href="#">TAB 1</a>
-          <a href="#">TAB 2</a>
-        </div>
-
- 
-        <h2>What is Home Care?</h2>
-
-   
-        <p>
-          Home care focuses on non-medical support to help you and your loved
-          ones with daily living. Our carefully screened and highly qualified
-          caregivers provide comprehensive home care and help you rediscover
-          activities you love through our Happier Aging Philopsphy
-        </p>
-
-
-        <div>
-          <h3 className={"inline-block"}>CARD</h3>
-          <h3 className={"inline-block"}>CARD</h3>
-          <h3 className={"inline-block"}>CARD</h3>
-        </div>
-
-        <Link to={"/services"}>View all Services &rarr;</Link> 
-        */}
-
-        <Tabs defaultValue="account" className=" w-[95%]">
+        <Tabs defaultValue="home-care" className=" w-[95%]">
           <TabsList className={"bg-white "}>
             <TabsTrigger value="home-care">Home Care</TabsTrigger>
             <TabsTrigger value="nursing-care">Nursing Care</TabsTrigger>
@@ -55,10 +28,12 @@ const CareTypes = () => {
               Philopsphy
             </p>
 
-            <div className={"w-full flex justify-around items-center mb-8"}>
+            <div
+              className={"w-full flex justify-around items-center gap-8 mb-8"}
+            >
               <div
                 className={
-                  "bg-white w-[300px] h-[400px] flex flex-col gap-8 items-center justify-center"
+                  "bg-white flex-1 rounded-2xl h-[400px] flex flex-col gap-8 items-center justify-center"
                 }
               >
                 <p>IMAGE</p>
@@ -71,7 +46,7 @@ const CareTypes = () => {
               </div>
               <div
                 className={
-                  "bg-white w-[300px] h-[400px] flex flex-col gap-8 items-center justify-center"
+                  "bg-white flex-1 rounded-2xl h-[400px] flex flex-col gap-8 items-center justify-center"
                 }
               >
                 <p>IMAGE</p>
@@ -84,7 +59,7 @@ const CareTypes = () => {
               </div>
               <div
                 className={
-                  "bg-white w-[300px] h-[400px] flex flex-col gap-8 items-center justify-center"
+                  "bg-white flex-1 rounded-2xl h-[400px] flex flex-col gap-8 items-center justify-center"
                 }
               >
                 <p>IMAGE</p>
@@ -113,10 +88,12 @@ const CareTypes = () => {
               more.
             </p>
 
-            <div className={"w-full flex justify-around items-center mb-8"}>
+            <div
+              className={"w-full flex justify-around items-center gap-8 mb-8"}
+            >
               <div
                 className={
-                  "bg-white w-[300px] h-[400px] flex flex-col gap-8 items-center justify-center"
+                  "bg-white flex-1 h-[400px] rounded-2xl flex flex-col gap-8 items-center justify-center"
                 }
               >
                 <p>IMAGE</p>
@@ -129,7 +106,7 @@ const CareTypes = () => {
               </div>
               <div
                 className={
-                  "bg-white w-[300px] h-[400px] flex flex-col gap-8 items-center justify-center"
+                  "bg-white h-[400px] flex-1 rounded-2xl flex flex-col gap-8 items-center justify-center"
                 }
               >
                 <p>IMAGE</p>
@@ -142,7 +119,7 @@ const CareTypes = () => {
               </div>
               <div
                 className={
-                  "bg-white w-[300px] h-[400px] flex flex-col gap-8 items-center justify-center"
+                  "bg-white h-[400px] flex-1 rounded-2xl flex flex-col gap-8 items-center justify-center"
                 }
               >
                 <p>IMAGE</p>
