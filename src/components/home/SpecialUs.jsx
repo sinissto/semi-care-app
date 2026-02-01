@@ -9,7 +9,7 @@ const cards = [
   {
     id: 1,
     title: "Humanity and trust",
-    text: 'At SemiCare, people are at the heart of everything we do – not just care services. We don\'t provide care "according to a plan," but with heart. We listen, we understand, we support – even during difficult times. We build long-term relationships – with our clients and their families.',
+    text: 'At SemiCare, people are at the heart of everything we do – not just care services. We don\'t provide care "according to a plan", but with heart. We listen, we understand, we support – even during difficult times. We build long-term relationships – with our clients and their families.',
   },
   {
     id: 2,
