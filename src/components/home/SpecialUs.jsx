@@ -1,6 +1,6 @@
 import Section from "../../layout/Section";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Keyboard, Mousewheel } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -27,12 +27,12 @@ const cards = [
     text: "We know that every person has their own story and their own needs. That's what we base our care on. Individually tailored care is our focus. Our care isn't limited to a routine program, but is provided with time, patience, and attention.",
   },
   {
-    id: 4,
+    id: 5,
     title: "Reliability and accessibility",
     text: "Reliability, punctuality, and clear communication are a matter of course for us. We are there for you – even when things get difficult. We are available 24 hours a day for emergencies, including Sundays and public holidays.",
   },
   {
-    id: 4,
+    id: 6,
     title: "Trust of relatives",
     text: "The decision to entrust one's parents or a loved one to strangers is never easy. At SemiCare, we understand these feelings perfectly – because for us, caregiving is more than just a service. It's a matter of trust. Trust begins where you can let go, knowing that those in need are in good hands.",
   },
@@ -59,7 +59,7 @@ const SpecialUs = () => {
       {/* Swiper */}
       <div className="relative max-w-8xl mx-auto">
         <Swiper
-          modules={[Autoplay, Pagination]}
+          modules={[Autoplay, Pagination, Keyboard, Mousewheel]}
           loop={true}
           autoplay={{
             delay: 3000,
@@ -72,15 +72,27 @@ const SpecialUs = () => {
           }}
           spaceBetween={24}
           slidesPerView={1}
+          keyboard={{
+            enabled: true,
+            onlyInViewport: true,
+          }}
+          mousewheel={{
+            forceToAxis: true,
+            sensitivity: 0.7,
+            thresholdDelta: 10,
+            releaseOnEdges: true,
+          }}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
+          className={"items-stretch"}
         >
           {cards.map((card) => (
-            <SwiperSlide key={card.id}>
-              <div className="h-full rounded-xl bg-white p-6 shadow-md">
+            <SwiperSlide key={card.id} className="!h-auto flex">
+              <div className="flex flex-col h-full rounded-xl bg-white p-6 shadow-md scale-90 swiper-slide-active:scale-100 transition-transform duration-300">
+                <p className="text-xl font-semibold mb-2">ICON {card.id}</p>
                 <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
                 <p className="text-gray-600">{card.text}</p>
               </div>
