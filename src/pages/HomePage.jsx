@@ -1,4 +1,4 @@
-import Hero from "../components/home/Hero";
+import { Hero } from "@/components/home/Hero";
 import CareTypes from "../components/home/CareTypes";
 import SpecialUs from "@/components/home/SpecialUs";
 import Steps from "@/components/home/Steps";
