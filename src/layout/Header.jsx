@@ -1,21 +1,14 @@
-import { NavLink } from "react-router";
-import logo from "../assets/images/logo.png";
-import MainNav from "../components/MainNav";
+import { Navbar1 } from "@/components/navbar1";
 
 const Header = () => {
   return (
-    <header className={"bg-primary-tint h-24 flex items-center justify-center"}>
-      <div
-        className={"max-w-8xl flex-1 flex items-center justify-between px-12"}
-      >
-        {/* logo */}
-        <NavLink to={"/"}>
-          <img src={logo} alt="SemiCare Logo" className={"h-18"} />
-        </NavLink>
-
-        {/* nav */}
-        <MainNav />
-      </div>
+    <header
+      className={
+        "bg-linear-to-b from-primary1/50 to-primary-tint mx-auto max-w-8xl sticky top-0 z-50 backdrop-blur-md"
+      }
+    >
+      {/* logo */}
+      <Navbar1 className={"flex justify-center px-8"} />
     </header>
   );
 };
