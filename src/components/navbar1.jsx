@@ -127,7 +127,7 @@ const Navbar1 = ({
                 className="max-h-12 dark:invert"
                 alt={logo.alt}
               />
-              <span className="text-2xl text-primary1  tracking-tighter font-bold">
+              <span className="text-2xl text-primary  tracking-tighter font-bold">
                 {logo.title}
               </span>
             </Link>
@@ -145,7 +145,7 @@ const Navbar1 = ({
             <Button
               asChild
               size="sm"
-              className={"bg-pink-400 text-lg font-normal hover:bg-pink-600"}
+              className={"bg-primary text-lg font-normal hover:bg-pink-600"}
             >
               <Link to={navBtns.contact.url}>{navBtns.contact.title}</Link>
             </Button>
@@ -162,7 +162,7 @@ const Navbar1 = ({
                 className="max-h-12 dark:invert"
                 alt={logo.alt}
               />
-              <span className="text-2xl text-primary1  tracking-tighter font-bold">
+              <span className="text-2xl text-primary  tracking-tighter font-bold">
                 {logo.title}
               </span>
             </Link>
@@ -185,7 +185,7 @@ const Navbar1 = ({
                         className="max-h-12 dark:invert"
                         alt={logo.alt}
                       />
-                      <span className="text-2xl text-primary1  tracking-tighter font-bold">
+                      <span className="text-2xl text-primary  tracking-tighter font-bold">
                         {logo.title}
                       </span>
                     </Link>
@@ -204,7 +204,7 @@ const Navbar1 = ({
                     <Button
                       asChild
                       className={
-                        "bg-pink-400 text-lg font-normal hover:bg-pink-600"
+                        "bg-primary text-lg font-normal hover:bg-pink-600"
                       }
                     >
                       <Link to={navBtns.contact.url}>

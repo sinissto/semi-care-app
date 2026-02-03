@@ -46,7 +46,7 @@ function NavigationMenuItem({ className, ...props }) {
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium hover:bg-primary1 hover:text-accent-foreground focus:bg-primary1 focus:text-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-primary1 data-[state=open]:text-accent-foreground data-[state=open]:focus:bg-primary1 data-[state=open]:bg-primary1/50 focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1"
+  "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium hover:bg-transparent hover:text-primary focus:bg-transparent focus:text-accent-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:text-primary-shade data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent/50 focus-visible:ring-ring/50 outline-none transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1"
 );
 
 function NavigationMenuTrigger({ className, children, ...props }) {
@@ -56,7 +56,7 @@ function NavigationMenuTrigger({ className, children, ...props }) {
       className={cn(navigationMenuTriggerStyle(), "group", className)}
       {...props}
     >
-      {children}{" "}
+      {children}
       <ChevronDownIcon
         className="relative top-[1px] ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180"
         aria-hidden="true"

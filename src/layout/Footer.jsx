@@ -3,7 +3,7 @@ import logo from "@/assets/images/LogoLarge.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary1 rounded-t-4xl p-6">
+    <footer className="bg-primary rounded-t-4xl p-6">
       <div className="max-w-8xl mx-auto flex flex-col items-center justify-center gap-5 px-10 pt-16 mb-8">
         <h2 className="text-6xl text-white font-bold ">Semi Care</h2>
         <p className="text-2xl text-center font-semibold text-white uppercase">
@@ -15,7 +15,7 @@ const Footer = () => {
         <Link
           to={"/contact"}
           className={
-            "text-xl text-center text-primary1 font-semibold px-6 py-3 bg-white rounded-[5px]"
+            "text-xl text-center text-primary font-semibold px-6 py-3 bg-white rounded-[5px]"
           }
         >
           Let's find out
