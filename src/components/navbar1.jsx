@@ -46,32 +46,32 @@ const Navbar1 = ({
           title: "Peritoneal Dialysis (CAPD)",
           description: "Providing comprehensive peritoneal dialysis care",
           icon: <Book className="size-5 shrink-0" />,
-          url: "/peritoneal-dialysis",
+          url: "/services/peritoneal-dialysis",
         },
         {
           title: "Basic care",
           description: "Offering essential healthcare services",
           icon: <Sunset className="size-5 shrink-0" />,
-          url: "/basic-care",
+          url: "/services/basic-care",
         },
         {
           title: "Treatment care",
           description: "Medical treatment by nursing professionals at home",
           icon: <Sunset className="size-5 shrink-0" />,
-          url: "/treatment-care",
+          url: "/services/treatment-care",
         },
         {
           title: "Domestic services",
           description: "Assisting with daily household tasks and chores",
           icon: <Trees className="size-5 shrink-0" />,
-          url: "/domestic-services",
+          url: "/services/domestic-services",
         },
         {
           title: "Respite care",
           description:
             "Care for your loved ones, giving you a much-needed break",
           icon: <Zap className="size-5 shrink-0" />,
-          url: "/respite-care",
+          url: "/services/respite-care",
         },
       ],
     },
@@ -107,7 +107,7 @@ const Navbar1 = ({
     },
   ],
 
-  auth = {
+  navBtns = {
     contact: { title: "Contact us", url: "/contact" },
   },
 
@@ -141,14 +141,13 @@ const Navbar1 = ({
             </div>
           </div>
 
-          {/* Login / Sign up */}
           <div className="flex">
             <Button
               asChild
               size="sm"
               className={"bg-pink-400 text-lg font-normal hover:bg-pink-600"}
             >
-              <Link to={auth.contact.url}>{auth.contact.title}</Link>
+              <Link to={navBtns.contact.url}>{navBtns.contact.title}</Link>
             </Button>
           </div>
         </nav>
@@ -208,7 +207,9 @@ const Navbar1 = ({
                         "bg-pink-400 text-lg font-normal hover:bg-pink-600"
                       }
                     >
-                      <Link to={auth.contact.url}>{auth.contact.title}</Link>
+                      <Link to={navBtns.contact.url}>
+                        {navBtns.contact.title}
+                      </Link>
                     </Button>
                   </div>
                 </div>
