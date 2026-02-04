@@ -1,7 +1,13 @@
 const Section = ({ children, className }) => {
   return (
-    <section className={`py-24 ${className ? className : "bg-primary-tint"}`}>
-      <div className={"max-w-8xl mx-auto px-8"}>{children}</div>
+    <section>
+      <div
+        className={`py-12 max-w-8xl mx-auto px-8 ${
+          className ? className : "bg-primary-tint"
+        }`}
+      >
+        <div className={``}>{children}</div>
+      </div>
     </section>
   );
 };

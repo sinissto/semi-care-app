@@ -12,7 +12,7 @@ function Tabs({ className, orientation = "horizontal", ...props }) {
       orientation={orientation}
       className={cn(
         "group/tabs flex gap-8 data-[orientation=horizontal]:flex-col items-center",
-        className,
+        className
       )}
       {...props}
     />
@@ -34,7 +34,7 @@ const tabsListVariants = cva(
     defaultVariants: {
       variant: "default",
     },
-  },
+  }
 );
 
 function TabsList({ className, variant = "default", ...props }) {
@@ -61,11 +61,11 @@ function TabsTrigger({ className, ...props }) {
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
       className={cn(
-        "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring text-primary1 relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-3xl border border-transparent px-2 py-1 text-md font-semibold whitespace-nowrap transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+        "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring text-primary relative inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-3xl border border-transparent px-2 py-1 text-md font-semibold whitespace-nowrap transition-all group-data-[orientation=vertical]/tabs:w-full group-data-[orientation=vertical]/tabs:justify-start focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 group-data-[variant=default]/tabs-list:data-[state=active]:shadow-sm group-data-[variant=line]/tabs-list:data-[state=active]:shadow-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
 
-        "data-[state=active]:bg-primary1 dark:data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 data-[state=active]:text-white",
+        "data-[state=active]:bg-primary dark:data-[state=active]:text-foreground dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 data-[state=active]:text-white",
         "after:bg-foreground after:absolute after:opacity-0 after:transition-opacity group-data-[orientation=horizontal]/tabs:after:inset-x-0 group-data-[orientation=horizontal]/tabs:after:bottom-[-5px] group-data-[orientation=horizontal]/tabs:after:h-0.5 group-data-[orientation=vertical]/tabs:after:inset-y-0 group-data-[orientation=vertical]/tabs:after:-right-1 group-data-[orientation=vertical]/tabs:after:w-0.5 group-data-[variant=line]/tabs-list:data-[state=active]:after:opacity-100",
-        className,
+        className
       )}
       {...props}
     />
