@@ -68,6 +68,20 @@ body {
   color: var(--text-grey-primary);
 }
 
+.custom-pagination .swiper-pagination-bullet {
+  background: var(--color-primary-tint); /* default color (gray-300) */
+  opacity: 1; /* override Swiper default opacity if needed */
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  transition: transform 150ms ease, background-color 150ms ease;
+}
+
+.custom-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--primary); /* active color (e.g., sky-500) */
+  transform: scale(1.25);
+}
+
 /*
 
 --- 01 TOPOGRAPHY SYSTEM
