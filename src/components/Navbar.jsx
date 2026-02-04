@@ -1,5 +1,17 @@
 "use client";
-import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
+import {
+  Book,
+  Menu,
+  Sunset,
+  Trees,
+  Zap,
+  Cross,
+  HandHeart,
+  MoveUpRightIcon,
+  Syringe,
+  BrushCleaning,
+  Orbit,
+} from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -25,7 +37,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import semi_care_logo from "@/assets/images/logo.png";
 
 const Navbar = ({
@@ -45,33 +57,40 @@ const Navbar = ({
         {
           title: "Peritoneal Dialysis (CAPD)",
           description: "Providing comprehensive peritoneal dialysis care",
-          icon: <Book className="size-5 shrink-0" />,
+          icon: <Cross className="size-5 shrink-0" />,
           url: "/services/peritoneal-dialysis",
         },
         {
           title: "Basic care",
           description: "Offering essential healthcare services",
-          icon: <Sunset className="size-5 shrink-0" />,
+          icon: <Orbit className="size-5 shrink-0" />,
           url: "/services/basic-care",
         },
         {
           title: "Treatment care",
           description: "Medical treatment by nursing professionals at home",
-          icon: <Sunset className="size-5 shrink-0" />,
+          icon: <Syringe className="size-5 shrink-0" />,
           url: "/services/treatment-care",
         },
         {
           title: "Domestic services",
           description: "Assisting with daily household tasks and chores",
-          icon: <Trees className="size-5 shrink-0" />,
+          icon: <BrushCleaning className="size-5 shrink-0" />,
           url: "/services/domestic-services",
         },
         {
           title: "Respite care",
           description:
             "Care for your loved ones, giving you a much-needed break",
-          icon: <Zap className="size-5 shrink-0" />,
+          icon: <HandHeart className="size-5 shrink-0" />,
           url: "/services/respite-care",
+        },
+        {
+          title: "All services",
+          description:
+            "All services we provide to make your life easier and better",
+          icon: <MoveUpRightIcon className="size-5 shrink-0" />,
+          url: "/services",
         },
       ],
     },
@@ -105,6 +124,7 @@ const Navbar = ({
         },
       ],
     },
+    { title: "About Us", url: "/about-us" },
   ],
 
   navBtns = {
@@ -227,8 +247,14 @@ const renderMenuItem = (item) => {
     return (
       <NavigationMenuItem key={item.title}>
         <NavigationMenuTrigger className={"bg-transparent text-lg"}>
-          {item.title}
+          <NavLink
+            to={item.url}
+            className={({ isActive }) => (isActive ? "text-primary" : "")}
+          >
+            {item.title}
+          </NavLink>
         </NavigationMenuTrigger>
+
         <NavigationMenuContent className="bg-popover text-popover-foreground">
           {item.items.map((subItem) => (
             <NavigationMenuLink asChild key={subItem.title} className="w-80 ">
@@ -240,14 +266,17 @@ const renderMenuItem = (item) => {
     );
   }
 
+  // const className =
+  //   "group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-lg font-medium transition-colors hover:bg-muted hover:text-accent-foreground";
+
   return (
     <NavigationMenuItem key={item.title}>
-      <NavigationMenuLink
-        href={item.url}
-        className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-lg font-medium transition-colors hover:bg-muted hover:text-accent-foreground"
+      <NavLink
+        to={"/about-us"}
+        className={({ isActive }) => (isActive ? "text-primary" : "")}
       >
-        {item.title}
-      </NavigationMenuLink>
+        <NavigationMenuLink>{item.title}</NavigationMenuLink>
+      </NavLink>
     </NavigationMenuItem>
   );
 };
@@ -277,9 +306,9 @@ const renderMobileMenuItem = (item) => {
 
 const SubMenuLink = ({ item }) => {
   return (
-    <a
+    <Link
       className="flex min-w-80 flex-row gap-4 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none hover:bg-pink-200 hover:text-accent-foreground"
-      href={item.url}
+      to={item.url}
     >
       <div className="text-foreground">{item.icon}</div>
       <div>
@@ -290,7 +319,7 @@ const SubMenuLink = ({ item }) => {
           </p>
         )}
       </div>
-    </a>
+    </Link>
   );
 };
 

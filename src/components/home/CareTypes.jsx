@@ -34,13 +34,15 @@ const CareTypes = () => {
             value="home-care"
             className={"w-full flex flex-col items-center"}
           >
-            <h2 className={"text-3xl font-bold mb-6"}>What is Home Care?</h2>
+            <h2 className={"text-3xl text-primary font-bold mb-6"}>
+              What is Home Care?
+            </h2>
             <p className="max-w-xl text-xl/normal text-center text-grey-primary mb-8 lg:text-xl ">
               Home care focuses on non-medical support to help you and your
               loved ones with daily living. Our carefully screened and highly
               qualified caregivers provide comprehensive home care and help you
               rediscover activities you love through our Happier Aging
-              Philopsphy
+              Philosophy
             </p>
 
             <div

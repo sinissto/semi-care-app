@@ -6,7 +6,7 @@ import step1 from "../../assets/images/step1.png";
 
 const Steps = () => {
   return (
-    <Section className="bg-primary-tint/30">
+    <Section className="bg-primary-tint/30 rounded-b-2xl">
       <p className="text-xl font-bold uppercase text-center text-primary mb-4">
         Easy as 1-2-3
       </p>

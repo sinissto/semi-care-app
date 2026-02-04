@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import logo from "@/assets/images/LogoLarge.png";
 import { FooterNav } from "@/components/FooterNav";
 
 const FooterOLD = () => {
