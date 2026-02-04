@@ -37,7 +37,7 @@ const Hero = ({
       className={cn("bg-primary-tint px-8 py-32 mx-auto max-w-8xl", className)}
     >
       <div className="container mx-auto">
-        <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
+        <div className="grid items-center justify-items-center gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="gap-5 flex flex-col items-center text-center lg:items-start lg:text-left order-2 lg:order-1">
             <h1 className="text-5xl/[1.05] text-grey-primary font-primary font-bold -tracking-[0.5px] mb-8 lg:text-6xl">
               {heading}
