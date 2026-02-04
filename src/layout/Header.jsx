@@ -1,4 +1,4 @@
-import { Navbar1 } from "@/components/navbar1";
+import { Navbar } from "@/components/Navbar";
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
       }
     >
       {/* logo */}
-      <Navbar1 className={"flex justify-center px-8"} />
+      <Navbar className={"flex justify-center px-8"} />
     </header>
   );
 };

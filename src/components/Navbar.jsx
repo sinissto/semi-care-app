@@ -28,7 +28,7 @@ import {
 import { Link } from "react-router";
 import semi_care_logo from "@/assets/images/logo.png";
 
-const Navbar1 = ({
+const Navbar = ({
   logo = {
     url: "/",
     src: semi_care_logo,
@@ -294,4 +294,4 @@ const SubMenuLink = ({ item }) => {
   );
 };
 
-export { Navbar1 };
+export { Navbar };
