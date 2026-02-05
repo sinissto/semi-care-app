@@ -1,4 +1,3 @@
-import AboutUsHero from "@/components/about_us/AboutUsHero";
 import { About } from "@/components/About";
 import Section from "@/layout/Section";
 
