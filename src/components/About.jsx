@@ -1,7 +1,5 @@
 import { cn } from "@/lib/utils";
 
-import { Button } from "@/components/ui/button";
-
 import andrija_zuki_img from "@/assets/images/about_us/andrija_zuki_no_bg.png";
 import ja_i_zuki_img from "@/assets/images/about_us/ja_i_zuki_no_bg.png";
 import humanity_and_trust_img from "@/assets/images/about_us/humanity_and_trust.jpg";
@@ -18,8 +16,6 @@ const About = ({ className, ...props }) => {
     mainImage,
     secondaryImage,
     breakout,
-    companiesTitle,
-    companies,
     achievementsTitle,
     achievementsDescription,
     achievements,
@@ -43,11 +39,6 @@ const About = ({ className, ...props }) => {
           </div>
           <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
             <div className="flex flex-col justify-between gap-6 rounded-xl p-7 md:w-1/2 lg:w-auto bg-white">
-              {/*<img*/}
-              {/*  src={breakout.src}*/}
-              {/*  alt={breakout.alt}*/}
-              {/*  className="mr-auto h-12 dark:invert"*/}
-              {/*/>*/}
               <div>
                 <p className="text-5xl text-primary text-center font-bold mb-6">
                   {breakout.title}
@@ -56,11 +47,6 @@ const About = ({ className, ...props }) => {
                   {breakout.description}
                 </p>
               </div>
-              {/*<Button variant="outline" className="mr-auto" asChild>*/}
-              {/*  <a href={breakout.buttonUrl} target="_blank">*/}
-              {/*    {breakout.buttonText}*/}
-              {/*  </a>*/}
-              {/*</Button>*/}
             </div>
             <img
               src={secondaryImage.src}
@@ -69,9 +55,8 @@ const About = ({ className, ...props }) => {
             />
           </div>
         </div>
-        {/*{companies && (*/}
+
         <div className="py-18">
-          {/*<p className="text-center">{companiesTitle} </p>*/}
           <div className="mt-6 flex flex-wrap justify-center gap-8 bg-primary-shade/98 p-10 rounded-xl mb-12">
             <p className={"max-w-4xl text-center text-xl text-white"}>
               We treat each person individually with empathy and respect –
@@ -89,21 +74,8 @@ const About = ({ className, ...props }) => {
               In the end, only one thing matters – that you know with a calm
               heart that your loved ones are in good hands.
             </p>
-            {/*{companies.map((company, idx) => (*/}
-            {/*  <div*/}
-            {/*    className="flex items-center gap-3"*/}
-            {/*    key={company.src + idx}*/}
-            {/*  >*/}
-            {/*    <img*/}
-            {/*      src={company.src}*/}
-            {/*      alt={company.alt}*/}
-            {/*      className="h-6 w-auto md:h-8 dark:invert"*/}
-            {/*    />*/}
-            {/*  </div>*/}
-            {/*))}*/}
           </div>
         </div>
-        {/*)}*/}
 
         {specialUs.map((item, idx) => (
           <div
@@ -121,24 +93,6 @@ const About = ({ className, ...props }) => {
                 </p>
               </div>
             </div>
-            {/*<div className="flex flex-col gap-4 text-center md:text-left">*/}
-            {/*  <h2 className="text-3xl font-semibold md:text-4xl">*/}
-            {/*    {achievementsTitle}*/}
-            {/*  </h2>*/}
-            {/*  <p className="max-w-xl text-muted-foreground">*/}
-            {/*    {achievementsDescription}*/}
-            {/*  </p>*/}
-            {/*</div>*/}
-            {/*<div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 text-center lg:grid-cols-4">*/}
-            {/*  {achievements.map((item, idx) => (*/}
-            {/*    <div className="flex flex-col gap-2" key={item.label + idx}>*/}
-            {/*      <span className="text-4xl font-semibold md:text-5xl">*/}
-            {/*        {item.value}*/}
-            {/*      </span>*/}
-            {/*      <p className="text-sm md:text-base">{item.label}</p>*/}
-            {/*    </div>*/}
-            {/*  ))}*/}
-            {/*</div>*/}
           </div>
         ))}
 
@@ -168,33 +122,6 @@ const About = ({ className, ...props }) => {
 };
 
 export { About };
-
-// const defaultCompanies = [
-//   {
-//     src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg",
-//     alt: "Arc",
-//   },
-//   {
-//     src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg",
-//     alt: "Descript",
-//   },
-//   {
-//     src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg",
-//     alt: "Mercury",
-//   },
-//   {
-//     src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg",
-//     alt: "Ramp",
-//   },
-//   {
-//     src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg",
-//     alt: "Retool",
-//   },
-//   {
-//     src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-6.svg",
-//     alt: "Watershed",
-//   },
-// ];
 
 const defaultAchievements = [
   { label: "Peritoneal Dialysis (CADP)", value: "17" },
@@ -262,21 +189,12 @@ const defaultProps = {
     alt: "Andrija in a pink shirt and Zuki smiling",
   },
   breakout: {
-    // src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-    // alt: "logo",
     title: "SemiCare",
     description: "Outpatient nursing service with heart and responsibility.",
-    // buttonText: "Discover more",
-    // buttonUrl: "https://shadcnblocks.com",
   },
-  // companiesTitle: "Valued by clients worldwide",
-  // companies: defaultCompanies,
-  // achievementsTitle: "Our Achievements in Numbers",
   achievementsTitle: "Lives made better in Numbers",
-  // achievementsDescription:
-  //   "Providing businesses with effective tools to improve workflows, boost efficiency, and encourage growth.",
   achievementsDescription:
-    "Providing care with dedication, expertize and warm approach made families to trust in us.",
+    "Providing care with dedication, expertise and warm approach made families to trust in us.",
   achievements: defaultAchievements,
   specialUs: defaultSpecialUs,
 };
