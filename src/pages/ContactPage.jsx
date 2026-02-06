@@ -45,13 +45,13 @@ const ContactPage = () => {
               <h3 className={"text-3xl font-semibold text-white"}>
                 How can we help?
               </h3>
-              <p className={"text-white/60"}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-                commodi, corporis cumque cupiditate deserunt dignissimos
-                expedita facilis libero mollitia nulla placeat quisquam
-                recusandae rerum saepe temporibus totam velit voluptas
-                voluptates?
-              </p>
+              {/*<p className={"text-white/60"}>*/}
+              {/*  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias*/}
+              {/*  commodi, corporis cumque cupiditate deserunt dignissimos*/}
+              {/*  expedita facilis libero mollitia nulla placeat quisquam*/}
+              {/*  recusandae rerum saepe temporibus totam velit voluptas*/}
+              {/*  voluptates?*/}
+              {/*</p>*/}
 
               {/* INPUT */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -137,8 +137,8 @@ const ContactPage = () => {
                     </div>
 
                     <div className="mb-2 text-xl font-semibold text-grey-primary">
-                      <p>{item.title}</p>
-                      <h3 className="text-grey-primary">
+                      <p className={"text-primary"}>{item.title}</p>
+                      <h3 className="textg-rey-primary">
                         {item.title === "Tel / Fax" && (
                           <a type={"tel"} href={`tel:${item.description}`}>
                             {item.description}
