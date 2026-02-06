@@ -7,34 +7,8 @@ import { Link } from "react-router";
 import heroImg from "@/assets/images/hero.png";
 import { useAppContext } from "@/hooks/useAppContext";
 
-const ServicesHero = ({
-  // badge = "Your Website Builder",
-  heading = "Home care - because home is where the heart is",
-  description = "Quality-assured home care and medical services in accordance with\n" +
-    "            recognized healthcare standards. Focuses on safety, reliability, and\n" +
-    "            preserving independence, while supporting families through clear\n" +
-    "            communication and trusted care.",
-
-  buttons = {
-    primary: {
-      text: "Contact Us",
-      url: "/contact",
-    },
-    secondary: {
-      text: "About Us",
-      url: "/about",
-    },
-  },
-
-  image = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
-    alt: "HeroOLD section demo image showing interface components",
-  },
-
-  className,
-}) => {
+const ServicesHero = ({ className }) => {
   const { services } = useAppContext();
-  console.log(services);
 
   return (
     <section

@@ -35,6 +35,7 @@ const data = {
         title: "Peritoneal Dialysis (CAPD)",
         icon: Cross,
         url: "/services/peritoneal-dialysis",
+        slug: "peritoneal-dialysis",
         description: [
           "Peritoneal dialysis changes everyday life – for patients as well as their families. It brings with it many questions, uncertainties, and anxieties. At SemiCare, we won't leave you alone with these challenges. We provide competent, empathetic, and reliable support to people undergoing peritoneal dialysis – right in your own home. We explain each step clearly, so you can feel confident.",
           "Peritoneal dialysis is a kidney replacement therapy used to remove toxins and excess water from the blood in patients with chronic kidney failure. Unlike hemodialysis, this process takes place inside the body, utilizing the body's own peritoneum (the lining of the abdominal cavity) as a filter.",
@@ -62,6 +63,7 @@ const data = {
         title: "Basic care",
         icon: Orbit,
         url: "/services/basic-care",
+        slug: "basic-care",
         description: [
           "Basic care is particularly important to prevent infections.",
           "Basic care supports people with their daily needs and ensures well-being, hygiene, and safety. The goal of basic care is to maintain independence as much as possible, promote health, and enable people to live with dignity. Our team offers the following basic care services:",
@@ -88,6 +90,7 @@ const data = {
         title: "Treatment care",
         icon: Syringe,
         url: "/services/treatment-care",
+        slug: "treatment-care",
         description: [
           "Treatment care encompasses medical measures carried out by nursing professionals in the home environment on the orders of a physician to cure, alleviate, or prevent the worsening of illnesses. It falls under the umbrella of home-based nursing care (German Social Code, Book V) and is regulated by the [relevant authority/organization].",
           "Health insurance covers the costs, regardless of the care level classification. This includes all activities that are to be carried out by healthcare and elderly care professionals based on a doctor's prescription, such as...",
@@ -108,6 +111,7 @@ const data = {
         title: "Domestic services",
         icon: BrushCleaning,
         url: "/services/domestic-services",
+        slug: "domestic-services",
         description: [
           "In addition, we offer various supplementary services that are not part of basic and medical care. If needed, our patients can book domestic support services to facilitate daily life. These are billed either as in-kind benefits through the long- term care insurance or as private services.",
           "Domestic services support individuals in managing their household tasks and daily chores. These services are designed to help maintain a clean, organized, and comfortable living environment, especially for those who may have difficulty performing these tasks themselves due to age, illness, or disability. Our domestic services include:",
@@ -128,6 +132,7 @@ const data = {
         title: "Respite care",
         icon: HandHeart,
         url: "/services/respite-care",
+        slug: "respite-care",
         description: [
           "Respite care provides temporary relief for primary caregivers, allowing them to take a break from their caregiving responsibilities. This service is designed to support caregivers who may be experiencing burnout or need time to attend to their own needs while ensuring that their loved ones continue to receive quality care.",
           "You want to go on vacation. You are ill or simply at the end of your rope. You do not have energy. But then there's that one person you lovingly care for every day. And you wonder: Who will look after them when I can't? Respite care exists precisely for these moments.",
@@ -155,6 +160,7 @@ const data = {
         title: "Other services",
         icon: TrendingUpDownIcon,
         url: "/services/other-services",
+        slug: "other-services",
         description: [
           "In addition to the core services we offer, we also provide a range of other services to meet the diverse needs of our clients. These services are designed to enhance the quality of life and provide additional support beyond basic and medical care. Our other services include:",
         ],
