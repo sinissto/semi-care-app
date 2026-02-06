@@ -20,11 +20,12 @@ import other_services_img_2 from "@/assets/images/other_services_img_2.png";
 const data = {
   services: {
     id: 1,
-    title: "Services",
+    label: "Our Services",
+    title: "Home care - because home is where the heart is",
     description: [
       "SemiCare follows a special concept: We offer the same services as any other care service.",
-      "We offer professional services covered by health insurance. In addition, you can also book medical and non-medical services that are not reimbursable, if desired. The advantage: You can choose the services that are...",
-      "They organize the necessary help in a compact and tailored way, without having to find a multitude of helpers. Which services are covered by health insurance?",
+      "We offer professional services covered by health insurance. In addition, you can also book medical and non-medical services that are not reimbursable, if desired. The advantage: You can choose the services that you need and want, and we will take care of the rest. ",
+      "We organize the necessary help in a compact and tailored way, without having to find a multitude of helpers. Which services are covered by health insurance?",
       "We will clarify which services you will have to pay for yourself and what that will cost in a non- binding consultation before the contract is concluded.",
     ],
 
@@ -35,9 +36,9 @@ const data = {
         icon: Cross,
         url: "/services/peritoneal-dialysis",
         description: [
+          "Peritoneal dialysis changes everyday life – for patients as well as their families. It brings with it many questions, uncertainties, and anxieties. At SemiCare, we won't leave you alone with these challenges. We provide competent, empathetic, and reliable support to people undergoing peritoneal dialysis – right in your own home. We explain each step clearly, so you can feel confident.",
           "Peritoneal dialysis is a kidney replacement therapy used to remove toxins and excess water from the blood in patients with chronic kidney failure. Unlike hemodialysis, this process takes place inside the body, utilizing the body's own peritoneum (the lining of the abdominal cavity) as a filter.",
           'A special dialysis solution is introduced via a catheter permanently implanted in the abdominal cavity. The peritoneum acts as a "semi-permeable" membrane through which waste products from the blood pass into the solution.',
-          "Peritoneal dialysis changes everyday life – for patients as well as their families. It brings with it many questions, uncertainties, and anxieties. At SemiCare, we won't leave you alone with these challenges. We provide competent, empathetic, and reliable support to people undergoing peritoneal dialysis – right in your own home. We explain each step clearly, so you can feel confident.",
           "Our services include the following:",
         ],
         serviceList: [
