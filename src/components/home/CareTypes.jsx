@@ -11,8 +11,8 @@ import {
 } from "@/components/ui/card";
 import basic_care_img from "@/assets/images/basic_care.jpeg";
 import domestic_service_img from "@/assets/images/domestic_care.jpg";
-import respite_care_img from "@/assets/images/respite_care_women.jpg";
-import peritoneal_dialysis_img from "@/assets/images/peritoneal_dialysis.png";
+import respite_care_img from "@/assets/images/respite_care_woman.jpg";
+import peritoneal_dialysis_img from "@/assets/images/peritoneal_dialysis_1.png";
 import treatment_care_img from "@/assets/images/treatment_care.jpg";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";

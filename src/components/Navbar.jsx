@@ -44,8 +44,8 @@ const Navbar = ({
   logo = {
     url: "/",
     src: semi_care_logo,
-    alt: "SamiCare Logo",
-    title: "SamiCare",
+    alt: "SemiCare Logo",
+    title: "SemiCare",
   },
 
   menu = [
