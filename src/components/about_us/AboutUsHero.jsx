@@ -33,7 +33,7 @@ const AboutUsHero = ({
   className,
 }) => {
   return (
-    <section
+    <div
       className={cn("bg-primary-tint px-8 py-32 mx-auto max-w-8xl", className)}
     >
       <div className="container mx-auto">
@@ -81,7 +81,7 @@ const AboutUsHero = ({
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

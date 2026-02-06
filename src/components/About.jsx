@@ -24,7 +24,7 @@ const About = ({ className, ...props }) => {
 
   return (
     <div className={cn("", className)}>
-      <div className="container">
+      <div className="container mx-auto">
         <div className="mb-14 grid gap-5 text-center md:grid-cols-2 md:text-left">
           <h1 className="text-5xl text-primary font-semibold">{title}</h1>
           <p className="text-xl text-grey-primary">{description}</p>
