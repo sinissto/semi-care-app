@@ -38,6 +38,30 @@ const ContactPage = () => {
   return (
     <Section className={"bg-primary-tint rounded-b-2xl"}>
       <div className="container mx-auto">
+        <div className={""}>
+          <h2
+            className={
+              "text-3xl md:text-5xl text-primary font-semibold mb-6 mt-10"
+            }
+          >
+            Interest or Questions - Contact Us!
+          </h2>
+          <p
+            className={"text-sm md:text-base text-grey-primary mb-4 max-w-2xl"}
+          >
+            We are here to help you with any questions or concerns you may have.
+            Please feel free to reach out to us using the contact form below, or
+            by using any of the contact details provided. We look forward to
+            hearing from you!
+          </p>
+          <p
+            className={
+              "text-md md:text-base text-primary uppercase font-bold mb-14 md:mb-10 max-w-2xl"
+            }
+          >
+            We offer a free consultation!
+          </p>
+        </div>
         <div className={"flex flex-col md:flex-row gap-8"}>
           {/* FORM */}
           <div className={"md:w-[54%] order-2 md:order-1"}>
