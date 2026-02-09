@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header
       className={
-        "bg-linear-to-b from-primary/50 to-primary-tint mx-auto max-w-8xl sticky top-0 z-50 backdrop-blur-md"
+        "bg-white border-b border-slate-200 mx-auto max-w-8xl sticky top-0 z-50 backdrop-blur-md"
       }
     >
       {/* logo */}

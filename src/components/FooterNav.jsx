@@ -89,7 +89,7 @@ const FooterNav = ({
                 <img
                   src={logoLarge}
                   alt={"SemiCare Large Logo"}
-                  className={"w-[75%] h-auto rounded-2xl"}
+                  className={"w-[75%] h-auto rounded-md"}
                 />
               </div>
               {/*<p className="mt-4 font-bold">{tagline}</p>*/}

@@ -22,7 +22,7 @@ const ServiceDetailsPage = () => {
         <img
           src={images[0]}
           alt="placeholder"
-          className="mt-4 mb-8 aspect-video w-full rounded-lg border object-cover"
+          className="mt-4 mb-8 aspect-video w-full rounded-md border object-cover"
         />
       </div>
 

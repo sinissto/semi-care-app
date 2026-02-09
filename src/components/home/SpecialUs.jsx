@@ -105,10 +105,10 @@ const SpecialUs = () => {
         >
           {cards.map((card) => (
             <SwiperSlide key={card.id} className="!h-auto flex">
-              <div className="flex flex-col h-full rounded-xl bg-primary/20 p-6 shadow-md scale-90 swiper-slide-active:scale-100 transition-transform duration-300">
+              <div className="flex flex-col h-full rounded-md bg-primary/20 p-6 shadow-md scale-90 swiper-slide-active:scale-100 transition-transform duration-300">
                 <div
                   className={
-                    "w-10 h-10 bg-white rounded-full flex items-center justify-center  mb-4"
+                    "w-10 h-10 bg-white rounded-md flex items-center justify-center  mb-4"
                   }
                 >
                   {card.icon}

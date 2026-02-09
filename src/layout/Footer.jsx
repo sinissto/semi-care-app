@@ -1,27 +1,8 @@
-import { Link } from "react-router";
 import { FooterNav } from "@/components/FooterNav";
 
 const FooterOLD = () => {
   return (
-    <footer className="max-w-8xl mx-auto bg-primary rounded-t-4xl p-6">
-      <div className="max-w-8xl mx-auto flex flex-col items-center justify-center gap-5 px-10 pt-16 mb-8">
-        <h2 className="text-6xl text-white font-bold ">Semi Care</h2>
-        <p className="text-2xl text-center font-semibold text-white uppercase">
-          How can we make your life happier?
-        </p>
-        <p className="text-xl text-center font-semibold text-white uppercase">
-          We offer a free consultation!
-        </p>
-        <Link
-          to={"/contact"}
-          className={
-            "text-xl text-center text-primary font-semibold px-6 py-3 bg-white rounded-[5px]"
-          }
-        >
-          Let's find out
-        </Link>
-      </div>
-
+    <footer className="max-w-8xl mx-auto bg-slate-200 rounded-t-md p-6 mt-8">
       {/*<div*/}
       {/*  className={*/}
       {/*    "max-w-8xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 bg-white p-8 rounded-2xl"*/}
@@ -38,7 +19,7 @@ const FooterOLD = () => {
 
       {/*  <div>SOCIALS, MAYBE</div>*/}
       {/*</div>*/}
-      <FooterNav className={"bg-white rounded-2xl p-8"} />
+      <FooterNav className={"bg-white rounded-md p-8"} />
     </footer>
   );
 };

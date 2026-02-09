@@ -22,7 +22,7 @@ const CareTypes = () => {
     <Section className={"bg-white"}>
       <div
         className={
-          "bg-[#F5EEE8] py-10 rounded-2xl flex flex-col items-center justify-center"
+          "bg-[#F5EEE8] py-10 rounded-md flex flex-col items-center justify-center"
         }
       >
         <Tabs defaultValue="home-care" className="w-[95%] mb-10">
@@ -268,7 +268,7 @@ const CareTypes = () => {
           <Link
             to={"/services"}
             className={
-              "text-xl bg-primary text-white inline-block py-6 px-12 rounded-lg hover:bg-transparent hover:text-primary hover:inset-ring-3 hover:inset-ring-primary active:scale-[0.98] transition-colors duration-300"
+              "text-xl bg-primary text-white inline-block py-6 px-12 rounded-md hover:bg-transparent hover:text-primary hover:inset-ring-3 hover:inset-ring-primary active:scale-[0.98] transition-colors duration-300"
             }
           >
             View All Services

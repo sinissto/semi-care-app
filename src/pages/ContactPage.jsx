@@ -65,7 +65,7 @@ const ContactPage = () => {
         <div className={"flex flex-col md:flex-row gap-8"}>
           {/* FORM */}
           <div className={"md:w-[54%] order-2 md:order-1"}>
-            <form className={"flex flex-col gap-6 p-10 bg-primary rounded-2xl"}>
+            <form className={"flex flex-col gap-6 p-10 bg-primary rounded-md"}>
               <h3 className={"text-3xl font-semibold text-white"}>
                 How can we help?
               </h3>
@@ -155,7 +155,7 @@ const ContactPage = () => {
                         "w-13 h-13 xl:w-18 xl:h-18 flex items-center justify-center"
                       }
                     >
-                      <div className="mb-4 rounded-full bg-primary-shade/20 p-4 text-primary">
+                      <div className="mb-4 rounded-md bg-primary-shade/20 p-4 text-primary">
                         {item.icon}
                       </div>
                     </div>

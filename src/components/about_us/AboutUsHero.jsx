@@ -51,7 +51,7 @@ const AboutUsHero = ({
                   <Link
                     to={buttons.primary.url}
                     className={
-                      "text-xl bg-primary text-white inline-block py-4 px-8 rounded-lg mr-4 hover:bg-primary-shade active:scale-[0.98] transition-colors duration-300"
+                      "text-xl bg-primary text-white inline-block py-4 px-8 rounded-md mr-4 hover:bg-primary-shade active:scale-[0.98] transition-colors duration-300"
                     }
                   >
                     {buttons.primary.text}
@@ -63,7 +63,7 @@ const AboutUsHero = ({
                   <Link
                     to={buttons.secondary.url}
                     className={
-                      "text-xl bg-primary-tint text-grey-primary inline-block py-4 px-8 rounded-lg hover:bg-primary-tint hover:inset-ring-3 hover:inset-ring-white active:scale-[0.98] transition-colors duration-300"
+                      "text-xl bg-primary-tint text-grey-primary inline-block py-4 px-8 rounded-md hover:bg-primary-tint hover:inset-ring-3 hover:inset-ring-white active:scale-[0.98] transition-colors duration-300"
                     }
                   >
                     {buttons.secondary.text}

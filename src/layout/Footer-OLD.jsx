@@ -15,7 +15,7 @@ const FooterOLD = () => {
         <Link
           to={"/contact"}
           className={
-            "text-xl text-center text-primary font-semibold px-6 py-3 bg-white rounded-[5px]"
+            "text-xl text-center text-primary font-semibold px-6 py-3 bg-white rounded-md"
           }
         >
           Let's find out
@@ -24,10 +24,10 @@ const FooterOLD = () => {
 
       <div
         className={
-          "max-w-8xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 bg-white p-8 rounded-2xl"
+          "max-w-8xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 bg-white p-8 rounded-md"
         }
       >
-        <img src={logo} className={"w-[30%] h-auto rounded-2xl"} />
+        <img src={logo} className={"w-[30%] h-auto rounded-md"} />
 
         <div>SERVICES</div>
 

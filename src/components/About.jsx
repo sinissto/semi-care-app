@@ -38,7 +38,7 @@ const About = ({ className, ...props }) => {
             />
           </div>
           <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
-            <div className="flex flex-col justify-between gap-6 rounded-xl p-7 md:w-1/2 lg:w-auto bg-white">
+            <div className="flex flex-col justify-between gap-6 rounded-md p-7 md:w-1/2 lg:w-auto bg-white">
               <div>
                 <p className="text-5xl text-primary text-center font-bold mb-6">
                   {breakout.title}
@@ -51,13 +51,13 @@ const About = ({ className, ...props }) => {
             <img
               src={secondaryImage.src}
               alt={secondaryImage.alt}
-              className="grow basis-0  rounded-xl object-cover md:w-1/2 lg:min-h-0 lg:w-auto ring-8 ring-primary/30"
+              className="grow basis-0  rounded-md object-cover md:w-1/2 lg:min-h-0 lg:w-auto ring-8 ring-primary/30"
             />
           </div>
         </div>
 
         <div className="py-18">
-          <div className="mt-6 flex flex-wrap justify-center gap-8 bg-primary-shade/98 p-10 rounded-xl mb-12">
+          <div className="mt-6 flex flex-wrap justify-center gap-8 bg-primary-shade/98 p-10 rounded-md mb-12">
             <p className={"max-w-4xl text-center text-xl text-white"}>
               We treat each person individually with empathy and respect –
               regardless of their religion, origin, language, or social status.
@@ -80,7 +80,7 @@ const About = ({ className, ...props }) => {
         {specialUs.map((item, idx) => (
           <div
             key={idx}
-            className="relative overflow-hidden rounded-xl bg-white p-7 md:p-16 mb-12"
+            className="relative overflow-hidden rounded-md bg-white p-7 md:p-16 mb-12"
           >
             <div className={"flex flex-col items-center gap-12 md:flex-row"}>
               <img src={item.img} alt={item.alt} className={"max-w-52"} />
@@ -96,7 +96,7 @@ const About = ({ className, ...props }) => {
           </div>
         ))}
 
-        <div className="relative overflow-hidden rounded-xl bg-white p-7 md:p-16">
+        <div className="relative overflow-hidden rounded-md bg-white p-7 md:p-16">
           <div className="flex flex-col gap-4 text-center md:text-left">
             <h2 className="text-3xl text-primary font-semibold md:text-4xl">
               {achievementsTitle}

@@ -34,7 +34,7 @@ const Hero = ({
 }) => {
   return (
     <section
-      className={cn("bg-primary-tint px-8 py-32 mx-auto max-w-8xl", className)}
+      className={cn("bg-slate-50 px-8 py-[3.375rem] mx-auto max-w-8xl", className)}
     >
       <div className="container mx-auto">
         <div className="grid items-center justify-items-center gap-6 lg:grid-cols-2 lg:gap-12">
@@ -46,24 +46,12 @@ const Hero = ({
               {description}
             </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
-              {buttons.primary && (
-                <Button asChild className="w-full sm:w-auto">
-                  <Link
-                    to={buttons.primary.url}
-                    className={
-                      "text-xl bg-primary text-white inline-block py-4 px-8 rounded-lg mr-4 hover:bg-primary-shade active:scale-[0.98] transition-colors duration-300"
-                    }
-                  >
-                    {buttons.primary.text}
-                  </Link>
-                </Button>
-              )}
               {buttons.secondary && (
-                <Button asChild variant="outline" className="w-full sm:w-auto ">
+                <Button asChild className="w-full sm:w-auto ">
                   <Link
                     to={buttons.secondary.url}
                     className={
-                      "text-xl bg-primary-tint text-grey-primary inline-block py-4 px-8 rounded-lg hover:bg-primary-tint hover:inset-ring-3 hover:inset-ring-white active:scale-[0.98] transition-colors duration-300"
+                      "text-xl bg-primary text-white inline-block py-4 px-8 rounded-md hover:bg-primary/90 active:scale-[0.98] transition-colors duration-300"
                     }
                   >
                     {buttons.secondary.text}

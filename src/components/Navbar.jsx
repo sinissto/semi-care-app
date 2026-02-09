@@ -165,7 +165,7 @@ const Navbar = ({
             <Button
               asChild
               size="sm"
-              className={"bg-primary text-lg font-normal hover:bg-pink-600"}
+              className={"bg-primary text-white text-lg font-normal hover:bg-primary/90"}
             >
               <Link to={navBtns.contact.url}>{navBtns.contact.title}</Link>
             </Button>
@@ -246,10 +246,10 @@ const renderMenuItem = (item) => {
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title}>
-        <NavigationMenuTrigger className={"bg-transparent text-lg"}>
+        <NavigationMenuTrigger className={"bg-transparent text-lg hover:underline hover:text-foreground"}>
           <NavLink
             to={item.url}
-            className={({ isActive }) => (isActive ? "text-primary" : "")}
+            className={({ isActive }) => (isActive ? "text-primary" : "hover:underline hover:text-foreground")}
           >
             {item.title}
           </NavLink>
@@ -273,9 +273,11 @@ const renderMenuItem = (item) => {
     <NavigationMenuItem key={item.title}>
       <NavLink
         to={"/about-us"}
-        className={({ isActive }) => (isActive ? "text-primary" : "")}
+        className={({ isActive }) => (isActive ? "text-primary" : "hover:underline hover:text-foreground")}
       >
-        <NavigationMenuLink>{item.title}</NavigationMenuLink>
+        <NavigationMenuLink className="hover:underline hover:text-foreground">
+          {item.title}
+        </NavigationMenuLink>
       </NavLink>
     </NavigationMenuItem>
   );
@@ -307,7 +309,7 @@ const renderMobileMenuItem = (item) => {
 const SubMenuLink = ({ item }) => {
   return (
     <Link
-      className="flex min-w-80 flex-row gap-4 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none hover:bg-pink-200 hover:text-accent-foreground"
+      className="flex min-w-80 flex-row gap-4 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none hover:bg-primary-tint/80 hover:text-accent-foreground"
       to={item.url}
     >
       <div className="text-foreground">{item.icon}</div>

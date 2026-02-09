@@ -13,9 +13,9 @@
   --font-primary: Nunito, sans-serif;
   --font-secondary: Pacifico, sans-serif;
 
-  /*--color-primary1: #e8407b;*/
-  --color-primary-tint: #fad9e5;
-  --color-primary-shade: #d13a6f;
+  /* Primary = zelena (akcenti, dugmad) */
+  --color-primary-tint: #c5e89a;
+  --color-primary-shade: #7ab82e;
 
   --color-grey-primary: #555;
   --color-grey-secondary: #333;
@@ -25,15 +25,14 @@
   /*  Shadcn variables START */
 
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --background: #f5f5f5;
+  --foreground: #333333;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  /*--primary: oklch(0.208 0.042 265.755);*/
-  --primary: #c80076;
-  --primary-foreground: oklch(0.984 0.003 247.858);
+  --primary: #8bc73e;
+  --primary-foreground: #ffffff;
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
@@ -65,7 +64,7 @@ body {
   font-family: Nunito, sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: var(--text-grey-primary);
+  color: var(--color-grey-primary);
 }
 
 .custom-pagination .swiper-pagination-bullet {
