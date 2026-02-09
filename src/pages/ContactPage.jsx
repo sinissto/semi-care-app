@@ -36,12 +36,12 @@ const info = [
 
 const ContactPage = () => {
   return (
-    <Section className={"bg-primary-tint rounded-b-2xl"}>
+    <Section className={"bg-slate-50"}>
       <div className="container mx-auto">
         <div className={""}>
           <h2
             className={
-              "text-3xl md:text-5xl text-primary font-semibold mb-6 mt-10"
+              "text-3xl md:text-5xl text-slate-800 font-semibold mb-6 mt-10"
             }
           >
             Interest or Questions - Contact Us!
@@ -56,7 +56,7 @@ const ContactPage = () => {
           </p>
           <p
             className={
-              "text-md md:text-base text-primary uppercase font-bold mb-14 md:mb-10 max-w-2xl"
+              "text-md md:text-base text-slate-700 uppercase font-bold mb-14 md:mb-10 max-w-2xl"
             }
           >
             We offer a free consultation!
@@ -65,8 +65,8 @@ const ContactPage = () => {
         <div className={"flex flex-col md:flex-row gap-8"}>
           {/* FORM */}
           <div className={"md:w-[54%] order-2 md:order-1"}>
-            <form className={"flex flex-col gap-6 p-10 bg-primary rounded-md"}>
-              <h3 className={"text-3xl font-semibold text-white"}>
+            <form className={"flex flex-col gap-6 p-10 bg-white border border-slate-200 rounded-md shadow-sm"}>
+              <h3 className={"text-3xl font-semibold text-slate-800"}>
                 How can we help?
               </h3>
               {/*<p className={"text-white/60"}>*/}
@@ -124,7 +124,7 @@ const ContactPage = () => {
               {/* TEXTAREA */}
               <Textarea
                 className={
-                  "h-50 bg-primary-tint  placeholder:text-sm placeholder:text-grey-primary"
+                  "h-50 bg-slate-50 placeholder:text-sm placeholder:text-grey-primary"
                 }
                 placeholder={"Type your message here..."}
               />
@@ -132,7 +132,7 @@ const ContactPage = () => {
               {/* Submit Button */}
               <Button
                 className={
-                  "bg-primary-tint text-grey-primary hover:bg-primary-tint/90 w-full md:max-w-40"
+                  "bg-slate-700 text-white hover:bg-slate-600 w-full md:max-w-40"
                 }
               >
                 Send message
@@ -147,7 +147,7 @@ const ContactPage = () => {
             }
           >
             <div className="flex-1 flex items-center md:justify-center order-1 md:order-2 mb-8 md:mb-0">
-              <ul className={"flex flex-col gap-8"}>
+              <ul className={"flex flex-col gap-2"}>
                 {info.map((item, index) => (
                   <li key={index} className="flex items-center gap-6">
                     <div
@@ -155,13 +155,13 @@ const ContactPage = () => {
                         "w-13 h-13 xl:w-18 xl:h-18 flex items-center justify-center"
                       }
                     >
-                      <div className="mb-4 rounded-md bg-primary-shade/20 p-4 text-primary">
+                      <div className="mb-4 rounded-md bg-slate-200 p-4 text-slate-700">
                         {item.icon}
                       </div>
                     </div>
 
                     <div className="mb-2 text-xl font-semibold text-grey-primary">
-                      <p className={"text-primary"}>{item.title}</p>
+                      <p className={"text-slate-800"}>{item.title}</p>
                       <h3 className="textg-rey-primary">
                         {item.title === "Tel / Fax" && (
                           <a type={"tel"} href={`tel:${item.description}`}>

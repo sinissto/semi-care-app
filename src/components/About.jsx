@@ -29,7 +29,7 @@ const About = ({ className, ...props }) => {
           <h1 className="text-5xl text-primary font-semibold">{title}</h1>
           <p className="text-xl text-grey-primary">{description}</p>
         </div>
-        <div className="grid gap-7 lg:grid-cols-3">
+        <div className="grid gap-7 lg:grid-cols-3 mb-10">
           <div className={"lg:col-span-2 flex items-center justify-center"}>
             <img
               src={mainImage.src}
@@ -53,27 +53,6 @@ const About = ({ className, ...props }) => {
               alt={secondaryImage.alt}
               className="grow basis-0  rounded-md object-cover md:w-1/2 lg:min-h-0 lg:w-auto ring-8 ring-primary/30"
             />
-          </div>
-        </div>
-
-        <div className="py-18">
-          <div className="mt-6 flex flex-wrap justify-center gap-8 bg-primary-shade/98 p-10 rounded-md mb-12">
-            <p className={"max-w-4xl text-center text-xl text-white"}>
-              We treat each person individually with empathy and respect –
-              regardless of their religion, origin, language, or social status.
-              We provide care the way we would want it for ourselves. We adapt
-              to your wishes. Our team provides care in German, English,
-              Bosnian, Croatian, and Serbian.
-            </p>
-            <p className={"max-w-4xl text-center text-xl text-white"}>
-              We are a reliable partner for family members. We provide relief,
-              advice, and support – transparently, honestly, and accessibly. In
-              this way, we create security for the whole family.
-            </p>
-            <p className={"max-w-4xl text-center text-xl text-white"}>
-              In the end, only one thing matters – that you know with a calm
-              heart that your loved ones are in good hands.
-            </p>
           </div>
         </div>
 

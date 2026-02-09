@@ -12,7 +12,7 @@ const ServicesHero = ({ className }) => {
 
   return (
     <section
-      className={cn("bg-primary-tint px-8 py-32 mx-auto max-w-8xl", className)}
+      className={cn("bg-slate-50 px-8 py-[3.375rem] mx-auto max-w-8xl", className)}
     >
       <div className="container mx-auto">
         <div className="flex items-center justify-center gap-6 ">

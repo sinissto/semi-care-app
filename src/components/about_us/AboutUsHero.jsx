@@ -34,7 +34,7 @@ const AboutUsHero = ({
 }) => {
   return (
     <div
-      className={cn("bg-primary-tint px-8 py-32 mx-auto max-w-8xl", className)}
+      className={cn("bg-slate-50 px-8 py-[3.375rem] mx-auto max-w-8xl", className)}
     >
       <div className="container mx-auto">
         <div className="grid items-center justify-items-center gap-6 lg:grid-cols-2 lg:gap-12">
